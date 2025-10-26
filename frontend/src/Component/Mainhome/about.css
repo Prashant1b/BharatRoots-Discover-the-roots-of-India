@@ -1,0 +1,89 @@
+/* About Page Scoped Styles */
+.about-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+/* Section Cards */
+.about-page > div {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-page > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+.about-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff6b6b;
+}
+
+.about-page h1::before {
+    content: "🌟 ";
+}
+
+/* Paragraphs */
+.about-page p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    white-space: pre-line; /* preserve line breaks in JSX */
+}
+
+/* Section-specific heading colors */
+.about-page #mission h1 { color: #ff9f43; }
+.about-page #vision h1 { color: #1dd1a1; }
+.about-page #offer h1 { color: #54a0ff; }
+.about-page #Future\ Scope h1 { color: #f368e0; }
+.about-page #copyright h1 { color: #576574; }
+.about-page #Legal h1 { color: #ff4757; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-page > div {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+
+    .about-page h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-page p {
+        font-size: 0.95rem;
+    }
+}
+
+.about-page .features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.about-page .features-list li {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    color: #555;
+}
+
+/* Optional: emojis stay as icons at the start */
+.about-page .features-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+}
